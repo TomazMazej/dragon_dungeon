@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/ovira"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/wall2"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <TableRow
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/scoreLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:paddingVertical="14dp"
+                android:text="Curent Score: 0"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:paddingRight="20dp"/>
+
+            <TextView
+                android:id="@+id/highScoreLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:gravity="right"
+                android:paddingVertical="14dp"
+                android:text="High Score: 300"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:paddingLeft="20dp"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/gameFrame"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/bg1">
+
+        <ImageView
+            android:id="@+id/dragon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/dragonborn"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bomb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sword"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/gold"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/gold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/gem"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/gem"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="240dp"
+                android:background="#0000"
+                android:gravity="center"
+                android:src="@drawable/naslov3" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#0000"
+                android:gravity="bottom"
+                android:onClick="startGame"
+                android:src="@drawable/startbutton" />
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#0000"
+                android:gravity="bottom"
+                android:src="@drawable/sharebutton" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#0000"
+                android:gravity="center_vertical"
+                android:onClick="quitGame"
+                android:paddingBottom="10dp"
+                android:src="@drawable/exitbutton" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+    
+    
+    
+</LinearLayout>
