@@ -11,8 +11,9 @@
 * Free endless survival game experience
 
 ## Tehnologies
-* Unity
-* C#
+* Java
+* Android Studio
+* libGDX
 
 ## Description
 Explore the depths of the dragon dungeon in this free addictive dungeon runner!
